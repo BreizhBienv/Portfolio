@@ -10,7 +10,6 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://breizhbienv.github.io',
-  base: '/Portfolio',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
