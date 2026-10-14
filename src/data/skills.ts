@@ -1,35 +1,24 @@
 export const skills = [
   {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>`,
-    title: "System Design & Architecture",
-    description: "Designing scalable, resilient services, clear boundaries, and data models; pragmatic trade‑offs documented via ADRs/RFCs.",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M8 17l-5-5 5-5v3l-2 2 2 2v3zm8-10l5 5-5 5v-3l2-2-2-2V7z"/></svg>`,
+    title: "Architecture & moteurs de jeu",
+    description: "Concevoir des systèmes scalables : architecture orientée données, outils, génération procédurale.",
   },
   {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 17l-5-5 5-5v3l-2 2 2 2v3zm8-10l5 5-5 5v-3l2-2-2-2V7z"/></svg>`,
-    title: "Full‑Stack Development",
-    description: "End‑to‑end features with React/Next.js, Node.js, and TypeScript, with strong UX, accessibility, and performance.",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2zM9 9h6v6H9V9zM11 11h2v2h-2v-2zM9 1h2v3H9V1zM13 1h2v3h-2V1zM9 20h2v3H9v-3zM13 20h2v3h-2v-3zM1 9h3v2H1V9zM1 13h3v2H1v-2zM20 9h3v2h-3V9zM20 13h3v2h-3v-2z"/></svg>`,
+    title: "IA appliquée au jeu",
+    description: "Pathfinding (A*, navmesh), Behaviour Tree, prise de décision, planification (HTN, GOAP), systèmes multi-agents et Reinforcement learning.",
   },
   {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a3 3 0 110 6 3 3 0 010-6zm0 6v6m0 0a3 3 0 100 6 3 3 0 000-6zm0 0a3 3 0 10-6 0 3 3 0 006 0zm6 0a3 3 0 11-6 0 3 3 0 016 0z"/></svg>`,
-    title: "APIs & Distributed Systems",
-    description: "Designing REST/GraphQL APIs, background jobs, queues, idempotency, retries, and observability for reliability.",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M21.9 11.5C21.5 8.3 20.6 6.1 19 5.4A3.5 3.5 0 0017.5 5c-1 0-1.8.7-3.7.7h-3.6C8.3 5.7 7.5 5 6.5 5a3.5 3.5 0 00-1.5.4C3.4 6.1 2.5 8.3 2.1 11.5c-.4 3.2-.3 5.9 1.1 6.4 1 .3 1.9-.4 2.8-1.5 1-1.2 2.1-1.6 4.6-1.6h2.8c2.5 0 3.6.4 4.6 1.6.9 1.1 1.800 1.800 2.800 1.500 1.400-.5 1.500-3.200 1.100-6.400zM9 9.500H7.800v1.200H6.700V9.500H5.500V8.400h1.200V7.200h1.100v1.200H9v1.100zm6.700.5a.9.9 0 110-1.800.9.9 0 010 1.800zm2.300 1.800a.9.9 0 110-1.800.9.9 0 010 1.800z"/></svg>`,
+    title: "Gameplay & systèmes de jeu",
+    description: "Prototyper des mécaniques jouables et leurs briques techniques : physique, collisions 3D et jeu multijoueur en réseau.",
   },
   {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7 3 4 4.79 4 7v10c0 2.21 3 4 8 4s8-1.79 8-4V7c0-2.21-3-4-8-4zm0 2c3.87 0 6 .93 6 2s-2.13 2-6 2-6-.93-6-2 2.13-2 6-2zm0 6c3.87 0 6 .93 6 2s-2.13 2-6 2-6-.93-6-2 2.13-2 6-2z"/></svg>`,
-    title: "Databases & Caching",
-    description: "Schema design, migrations, and performance tuning with Postgres; caching and rate‑limiting with Redis.",
-  },
-  {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm-1 15l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/></svg>`,
-    title: "Testing & CI/CD",
-    description: "Unit, integration, and E2E tests (Jest, Playwright) with GitHub Actions pipelines, preview envs, and quality gates.",
-  },
-  {
-    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 18H6a4 4 0 010-8 5 5 0 019.9-1.5A4.5 4.5 0 1119 18z"/></svg>`,
-    title: "Cloud & DevOps",
-    description: "AWS, Docker, and Terraform; secure deployments, monitoring/alerts, and cost‑aware operations.",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>`,
+    title: "Optimisation & performance",
+    description: "Analyser et améliorer les performances d'un jeu : profiling CPU/GPU, optimisation du code (multithreading, algorithmique) et de la scène (LOD, culling).", 
   },
 ];
 
 export type Skill = (typeof skills)[number];
-

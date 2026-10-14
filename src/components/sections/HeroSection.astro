@@ -37,8 +37,10 @@ const {
         {primaryCTA && (
           <Button href={primaryCTA.href} variant="primary" size="md">{primaryCTA.text}</Button>
         )}
-        {secondaryCTA && (
-          <Button href={secondaryCTA.href} variant="secondary" size="md">{secondaryCTA.text}</Button>
+       {secondaryCTA && (
+          <div class="[&>button]:transition-all [&>button]:duration-200 [&>button:hover]:-translate-y-0.5 [&>button:hover]:scale-105 [&>button:hover]:shadow-lg [&>button:hover]:shadow-[var(--accent)]/40">
+            <Button href={secondaryCTA.href} variant="secondary" size="md">{secondaryCTA.text}</Button>
+          </div>
         )}
       </div>
     )}

@@ -10,17 +10,12 @@ import WorkExperience from '../components/sections/WorkExperience.astro';
 import { work } from '../data/work';
 import Studies from '../components/sections/Studies.astro';
 import { studies } from '../data/studies';
-import Carousel from '../components/ui/carousel/Carousel.astro';
-import { logos } from '../data/logos';
 import ArrowSeparator from '../components/ui/separator/ArrowSeparator.astro'
 import GlowLineSeparator from '../components/ui/separator/GlowLineSeparator.astro'
 
 // Logos
-import astroLogo from '../assets/logos/Astro-logo.svg';
-import googleAdsLogo from '../assets/logos/GoogleAds-logo.svg';
-import posthogLogo from '../assets/logos/posthog-logo.svg';
-import notionLogo from '../assets/logos/Notion-logo.svg';
-import figmaLogo from '../assets/logos/Figma-logo.svg';
+import AboutMe from '@/components/sections/AboutMe.astro';
+import Projects from '@/components/sections/Projects.astro';
 
 // skills are imported from src/data/skills
 ---
@@ -33,12 +28,12 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'Site Author',
+      name: 'Gauthier BIENVENU Portfolio',
       url: new URL('/', Astro.site).toString(),
-      logo: new URL('/favicon.svg', Astro.site).toString(),
+      // logo: new URL('/favicon.svg', Astro.site).toString(),
       sameAs: [
-        'https://x.com/guihubie',
-        'https://www.linkedin.com/in/guilherme-hubie/',
+        'https://github.com/breizhbienv',
+        'https://www.linkedin.com/in/gauthier-bienvenu/',
       ],
     })} />
 	</head>
@@ -46,21 +41,24 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
 		<Header />
 		<main>
       <HeroSection
-        title="Your Headline Goes Here!"
-        subtitle="I build softwares that brings you loyal subscribers."
+        title="Gauthier BIENVENU"
+        subtitle="Programmeur gameplay & moteur"
         showCTA
-        primaryCTA={{ text: 'View Projects', href: '/portfolio' }}
-        secondaryCTA={{ text: 'Read Blog', href: '/blog' }}
+        secondaryCTA={{ text: 'Curriculum Vitae', href: '' }}
       />
      
 
     <section class="py-6">
+      <GlowLineSeparator />
+      <AboutMe title="À propos de moi" />
       <ArrowSeparator />
-      <SkillsSection title="Skills & Tools" skills={skills} />   
+      <WorkExperience title="Experience professionnelle" items={work} />
       <ArrowSeparator />
-      <WorkExperience title="Work Experience" items={work} />
+      <Projects title="Projets" />
       <ArrowSeparator />
-      <Studies title="Studies" items={studies} />
+      <SkillsSection title="Compétences & Outils" skills={skills} />   
+      <ArrowSeparator />
+      <Studies title="Formation" items={studies} />
       <GlowLineSeparator />
     </section>
 		</main>

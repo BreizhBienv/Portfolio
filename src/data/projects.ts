@@ -1,58 +1,34 @@
-import PhoenixIcon from '../assets/logos/Phoenix-logo.svg?raw';
-import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
-import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
-import PosthogIcon from '../assets/logos/posthog-logo.svg?raw';
-import PythonIcon from '../assets/logos/Python-logo.svg?raw';
-import TailwindIcon from '../assets/logos/Tailwind-logo.svg?raw';
+import UnrealEngineIcon from '../assets/logos/UnrealEngine_logo.svg?raw';
+import UnityIcon from '../assets/logos/Unity_logo.svg?raw';
+import OneTouchIcon from '../assets/icons/OneTouch_logo.svg?raw'
 
 
 export const projects = [
 	{
-		title: "Workflow Automation Orchestrator (n8n)",
-		techStack: "n8n • Node.js • TypeScript • PostgreSQL",
-		description: "Event‑driven workflows for data sync, notifications, and back‑office automation. Custom nodes, secrets management, retries, and metrics.",
-		ctaText: "View Repo →",
-		ctaLink: "#",
-		icon: N8nIcon
+		title: "Simulation des mouvements de foules",
+		techStack: "Unreal Engine 5 • Cpp • Mass AI • Dynamique des fluides",
+		description: "Recherche entammé à ISART Digital sur la simulation réaliste des mouvement d'une foule en utilisant un système multi-agent (Mass AI) et la dynamique des fluides (SPH).",
+		ctaText: null,
+		ctaLink: null,
+		icon: UnrealEngineIcon
 	},
 	{
-		title: "SaaS API Starter (Auth, Billing, RBAC)",
-		techStack: "Node.js • TypeScript • PostgreSQL • Supabase • Stripe",
-		description: "Production‑ready REST/GraphQL API with JWT auth, role‑based access, Stripe subscriptions, and rate‑limited endpoints.",
-		ctaText: "Get Source < / >",
-		ctaLink: "#",
-		icon: SupabaseIcon
+		title: "OneTouch",
+		techStack: "Unity • C# • FireBase • Amazon GameLift",
+		description: "Projet TCG (Trading Card Game) sur mobile sur le thème du football du studio FromTheFrench.",
+		ctaText: "Commencer un match !",
+		ctaLink: "https://www.onetouch.football/fr",
+		icon: OneTouchIcon
 	},
 	{
-		title: "Realtime Chat Service",
-		techStack: "Phoenix • WebSockets • Redis • Docker",
-		description: "Low‑latency chat with channels, presence, and backpressure handling. Includes load tests and horizontal scaling notes.",
-		ctaText: "Live Demo →",
-		ctaLink: "#",
-		icon: PhoenixIcon
-	},
-	{
-		title: "Product Analytics Pipeline",
-		techStack: "Node.js • PostHog • PostgreSQL • ClickHouse",
-		description: "Event ingestion, batching, and replay; user properties and cohorts; dashboards for funnels, retention, and feature adoption.",
-		ctaText: "Read Case Study →",
-		ctaLink: "#",
-		icon: PosthogIcon
-	},
-	{
-		title: "Data Ingestion & ETL",
-		techStack: "Python • Airflow • PostgreSQL • S3",
-		description: "Scheduled extract/transform/load with schema migrations, data quality checks, and partitioned tables for analytics.",
-		ctaText: "View Repo →",
-		ctaLink: "#",
-		icon: PythonIcon
-	},
-	{
-		title: "Design System",
-		techStack: "React • TypeScript • Tailwind CSS • Storybook",
-		description: "Accessible UI kit with tokens, theming, and testing. Published as a versioned package with changelogs and docs.",
-		ctaText: "Docs →",
-		ctaLink: "#",
-		icon: TailwindIcon
+		title: "Coastal Drift",
+		techStack: "Unreal Engine 5 • Cpp / Blueprint",
+		description: 
+		"Conception et réalisation d'un jeu vidéo au cours d'une année à ISART Digital dans une équipe pluridisciplinaire. \
+		Il sagit d'un Action-Shooter dans lequel le joueur contrôle un véhicule. \
+		Mon rôle portait en majorité sur le développement des IA.",
+		ctaText: "Jouer au jeu ->",
+		ctaLink: "https://isart-digital.itch.io/coastaldrift",
+		icon: UnrealEngineIcon
 	},
 ];

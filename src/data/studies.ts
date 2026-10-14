@@ -1,27 +1,19 @@
 export const studies = [
   {
-    title: "B.S. in Computer Science",
-    institution: "State University",
+    title: 
+      "Game Programming",
+    institution: 
+      "ISART Digital",
     description:
-      "Core CS foundations: data structures, algorithms, operating systems, networking, and databases; team capstone in web systems.",
+      "Expert en programmation et mise en œuvre de plateformes logicielles 3D : moteurs de jeu (Unreal Engine, Unity), simulation physique, rendu GPU, optimisation et IA.",
     tags: [
-      "Algorithms",
-      "Data Structures",
-      "Operating Systems",
-      "Databases",
-      "Networking",
-    ],
-  },
-  {
-    title: "M.S. in Software Engineering",
-    institution: "Tech Institute",
-    description:
-      "Focus on distributed systems, testing strategies, and cloud architecture; thesis on resilience patterns in microservices.",
-    tags: [
-      "Distributed Systems",
-      "Cloud Architecture",
-      "Testing",
-      "Microservices",
+      "Programmation moteur",
+      "Optimisation CPU/GPU",
+      "IA",
+      "Programmation graphique 3D",
+      "Mathématiques et physiques",
+      "Programmation réseau",
+      "Gestion de projet & d'équipe"
     ],
   },
 ];
